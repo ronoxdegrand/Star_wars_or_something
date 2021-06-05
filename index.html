@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star wars or something idk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .useinline {
+            display: inline;
+        }
+
+        body {
+            overflow: hidden;
+            background: url("textures/background.jpg");
+            background-size: 100%;
+            font-family: monospace;
+            font-size: large;
+        }
+
+        canvas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scene"></div>
+    <div class="hud" style="
+        background: #99aabb;
+        position: fixed;
+        margin: 7px;
+        padding: 7px;
+        border-radius: 10px 10px 30px 10px;
+        width: 210px;
+        color: black;
+        ">
+        <div>
+            <p class="useinline">SCORE |</p>
+            <p class="useinline" id="scorehere">0</p>
+        </div>
+        <div>
+            <p class="useinline">HEALTH|</p>
+            <p class="useinline" id="healthhere">100000</p>
+        </div>
+    </div>
+    <div class="hud" style="
+        background: #99aabb;
+        position: fixed;
+        margin: 7px;
+        padding: 7px;
+        right: 0;
+        border-radius: 10px 10px 10px 30px;
+        width: 210px;
+        color: black;
+        text-align: right;
+        ">
+        <p>Star wars or something</p>
+        <p>I didnt read the book</p>
+    </div>
+    <div class="hud" style="
+        position: fixed;
+        border-radius: 30px;
+        color: white;
+        text-align: center;
+        top: 100px; left: 0; bottom: 0; right: 0;
+        font-size: 200px;
+    ">
+        <p id="gameover"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.js"
+        integrity="sha512-TfxQd1Gi4H0u+TQ1ZsRYYp9MNqHvsnUGeCwganm/lWe7ekxmQKqrkCIIgBFs2rs/p+Chi4hNcIgAHT92eh6qBQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
